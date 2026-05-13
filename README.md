@@ -48,8 +48,7 @@ sakila-sql-analysis/
 │   ├── export_outputs.py
 │   └── inspect_db.py
 ├── README.md
-├── requirements.txt
-└── TODO.md
+└── requirements.txt
 ```
 
 ## Setup Instructions
