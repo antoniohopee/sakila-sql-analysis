@@ -44,7 +44,7 @@ def format_euro(value: float) -> str:
 
 
 def create_chart_card(title: str, horizontal: bool = False):
-    fig = plt.figure(figsize=(5, 5), dpi=100)
+    fig = plt.figure(figsize=(12, 7), dpi=150)
     fig.patch.set_facecolor("white")
 
     card = FancyBboxPatch(
@@ -75,7 +75,7 @@ def create_chart_card(title: str, horizontal: bool = False):
 
 
 def save_png(fig, filename: str) -> None:
-    fig.savefig(IMG_DIR / filename, dpi=100)
+    fig.savefig(IMG_DIR / filename, dpi=150)
     plt.close(fig)
 
 
@@ -121,7 +121,7 @@ def plot_kpi_cards(data, filename):
         ("Ticket", f"EUR {row['avg_payment']:.2f}"),
     ]
 
-    fig = plt.figure(figsize=(5, 5), dpi=100)
+    fig = plt.figure(figsize=(12, 7), dpi=150)
     fig.patch.set_facecolor("white")
     card = FancyBboxPatch(
         (0.03, 0.05),
